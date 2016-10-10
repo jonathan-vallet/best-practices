@@ -144,15 +144,15 @@ Aucun fichier spécifique ne doit être créé pour les plateformes mobiles, les règ
 
 Réunit les éléments globaux au projet, ainsi que les blocs uniques qu'on retrouve sur l'ensemble des pages.
 
-#####`common.scss`
+##### `_common.scss`
 
 Contient le *reset* et le style par défaut des balises.
 
-#####`font.scss`
+##### `_font.scss`
 
 Contient la définition des familles de polices. L'[article de Jonathan Vallet sur les `font-face`s](http://connect.adfab.fr/design/la-police-comment-bien-l-ecrire) permet d'aller plus loin sur le sujet.
  
-#####`var.scss`
+##### `_var.scss`
 
 Contient les variables globales du projet. La majorité des variables devraient être définies dans ce fichier, le but étant de faciliter la modification du site juste en changeant une variable. On devrait notamment y retrouver :
 
@@ -160,21 +160,21 @@ Contient les variables globales du projet. La majorité des variables devraient ê
 * **Les couleurs des éléments de base** : Telles que la couleur par défaut du texte (`$text-color`), la couleur des liens (`$link-color`), des titres (`$title-color`), … Bien entendu la valeur de ces variables doit être une couleur définie au dessus tel qu'évoqué ci-dessus
 * **La taille des éléments de base** : Pour ceux qui en possèdent une fixe telle que, souvent, la hauteur du header (`$header-height`), du footer (`$footer-height`), … Ce qui permet de les réutiliser au sein d'élément qui se positionnent par rapport à ces derniers (comme un sous-menu, par exemple)
 
-#####`mixin.scss`
+##### `_mixin.scss`
 
-#####`sprite.scss`
+##### `_sprite.scss`
 
 Contient une classe par élément du *sprite*, au cas où on aurait pas pu utiliser de police d'icônes.
 
 #### `/layout/`
 
-#####`header.scss`
+##### `_header.scss`
 
-#####`footer.scss`
+##### `_footer.scss`
 
-#####`menu.scss`
+##### `_menu.scss`
 
-#####`sidebar.scss`
+##### `_sidebar.scss`
 
 #### `/libs/`
 
@@ -186,15 +186,15 @@ Les fichiers des librairies ne doivent pas être surchargés ici mais dans un fich
 
 Le style des composants de base tels que les boutons, les titres ou les formulaires.
 
-#####`button.scss`
+##### `_button.scss`
 
-#####`title.scss`
+##### `_title.scss`
 
 Le style des titres et sous-titres.
 
-#####`form.scss`
+##### `_form.scss`
 
-#####`/libs/`
+##### `/libs/`
 
 Un fichier du surcharge par librairie, reprenant le même nom de fichier que dans le dossier `/libs/`.
 
